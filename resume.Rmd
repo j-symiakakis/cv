@@ -1,11 +1,10 @@
 ---
-title: Nick Strayer's Resume"
-author: Nick Strayer
+title: "Jaclyn's Resume"
+author: "Jaclyn Symiakakis"
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
     css: ['css/custom_resume.css', 'css/styles.css', 'resume']
-    # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
 ---
 
@@ -52,51 +51,17 @@ Aside
 Contact {#contact}
 --------------------------------------------------------------------------------
 
+- <i class="fa fa-github"></i> github.com/j-symiakakis
 
 
-- <i class="fa fa-envelope"></i> nick.strayer@gmail.com
-- <i class="fa fa-twitter"></i> NicholasStrayer
-- <i class="fa fa-github"></i> github.com/nstrayer
-- <i class="fa fa-link"></i> [nickstrayer.me](http://nickstrayer.me/)
-- <i class="fa fa-phone"></i> (734) 645-0110
-
-
-
-Language Skills {#skills}
+Skills {#skills}
 --------------------------------------------------------------------------------
 
-
-```{r}
-skills <- tribble(
-  ~skill,               ~level,
-  "R",                  5,
-  "Javascript (d3.js)", 4.5,
-  "Python",             4,
-  "Bash",               3.5,
-  "SQL",                3,
-  "C++",                3,
-  "AWK",                3
-)
-build_skill_bars(skills)
-```
-
-
-
-Open Source Contributions {#open-source}
---------------------------------------------------------------------------------
-
-All projects available at `github.com/nstrayer/<name>`
-
-
-- `shinysense`: R package to use sensor data in Shiny apps
-- `tuftesque`: Hugo theme (behind LiveFreeOrDichotomize.com)
-- `slid3r`: D3 add-on for fully svg slider inputs
-
-
-More info {#more-info}
---------------------------------------------------------------------------------
-
-See full CV at nickstrayer.me/cv for more complete list of positions and publications.
+- Data Analytics
+- R
+- Data Visualization
+- Business Analysis
+- International Business
 
 
 Disclaimer {#disclaimer}
@@ -104,7 +69,7 @@ Disclaimer {#disclaimer}
 
 Made w/ [**pagedown**](https://github.com/rstudio/pagedown). 
 
-Source code: [github.com/nstrayer/cv](https://github.com/nstrayer/cv).
+Source code: github.com/j-symiakakis/cv
 
 Last updated on `r Sys.Date()`.
 
@@ -114,15 +79,11 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Nick Strayer {#title}
+Jaclyn Symiakakis {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I have made [visualizations viewed by hundreds of thousands of people](https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html), [sped up query times for 25 terabytes of data by an average of 4,800 times](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/), and built [packages for R](https://github.com/nstrayer/shinysense) that let you [do magic](http://nickstrayer.me/dataDayTexas/).
-
-Currently searching for a data science position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
-"
-
+intro_text <- "Data analytics professional with experience in business analysis and data analytics. Background includes international business, healthcare, wine production, and service in the United States Air Force."
 
 cat(sanitize_links(intro_text))
 ```
@@ -145,12 +106,35 @@ Selected Positions {data-icon=suitcase}
 position_data %>% print_section('positions')
 ```
 
-Selected Writing {data-icon=newspaper}
+Technical Skills {data-icon=laptop}
 --------------------------------------------------------------------------------
 
+<div style="margin-left: 70px;">
+
+**Data Analysis:** R, RStudio, data cleaning, statistical analysis, data visualization
+
+**Methods:** Regression, fixed effects, difference-in-differences, interrupted time series
+
+**Spatial Analysis:** GIS, spatial analysis, choropleth and bivariate mapping
+
+**Tools:** Git, GitHub, R Markdown, Quarto
+
+</div>
+
+
+Selected Data Analytics Projects {data-icon=chart-line}
+--------------------------------------------------------------------------------
 
 ```{r}
-position_data %>% print_section('writings')
+position_data %>% print_section('projects')
 ```
 
+Certifications & Additional Training {data-icon=certificate}
+--------------------------------------------------------------------------------
 
+<div style="margin-left: 70px;">
+
+**Winemaking Certification**  
+University of California, Davis
+
+</div>
